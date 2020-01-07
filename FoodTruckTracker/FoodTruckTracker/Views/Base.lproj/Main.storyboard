@@ -242,10 +242,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="398" id="StQ-jR-paS">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DinerCell" rowHeight="398" id="StQ-jR-paS" customClass="DinerTableViewCell" customModule="FoodTruckTracker" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="398"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="StQ-jR-paS" id="e2N-Sl-dOC">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="StQ-jR-paS" id="e2N-Sl-dOC" customClass="DinerTableViewCell" customModule="FoodTruckTracker" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="398"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -269,6 +269,9 @@
                                         </label>
                                         <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="fOj-93-zhK">
                                             <rect key="frame" x="0.0" y="130" width="414" height="257"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="wmT-Uv-BfO" id="wGj-IX-wLw"/>
+                                            </connections>
                                         </mapView>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5zB-hD-l9a">
                                             <rect key="frame" x="166" y="0.0" width="240" height="128"/>
@@ -297,6 +300,7 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
+                                    <outlet property="mapView" destination="fOj-93-zhK" id="j8S-mZ-ab6"/>
                                     <segue destination="4yB-aJ-UwT" kind="show" id="tYR-zg-iSC"/>
                                 </connections>
                             </tableViewCell>
@@ -306,7 +310,9 @@
                             <outlet property="delegate" destination="wmT-Uv-BfO" id="K3m-zw-LZy"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="6rk-vR-J7a"/>
+                    <navigationItem key="navigationItem" id="6rk-vR-J7a">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="1ze-fI-CwG"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cJm-rB-1St" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -392,9 +398,7 @@
                             <outlet property="delegate" destination="4yB-aJ-UwT" id="7Gw-U7-8dL"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="JIH-Me-d9Q">
-                        <barButtonItem key="rightBarButtonItem" title="Logout" id="1ze-fI-CwG"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="JIH-Me-d9Q"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="38Z-wg-Cdk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
