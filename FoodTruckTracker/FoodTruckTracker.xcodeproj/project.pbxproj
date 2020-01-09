@@ -18,7 +18,6 @@
 		E36CED6D23C5598400D9792A /* Bearer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36CED6C23C5598400D9792A /* Bearer.swift */; };
 		E36CED6F23C55E7100D9792A /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36CED6E23C55E7100D9792A /* RegisterController.swift */; };
 		E36CED7123C64E5C00D9792A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36CED7023C64E5C00D9792A /* RegisterViewController.swift */; };
-		E36CED7523C6792500D9792A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36CED7423C6792500D9792A /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +34,6 @@
 		E36CED6C23C5598400D9792A /* Bearer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bearer.swift; sourceTree = "<group>"; };
 		E36CED6E23C55E7100D9792A /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = SOURCE_ROOT; };
 		E36CED7023C64E5C00D9792A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		E36CED7423C6792500D9792A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../../LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +90,6 @@
 		E36CED6823C4F95600D9792A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				E36CED7423C6792500D9792A /* LoginViewController.swift */,
 				E36CED7023C64E5C00D9792A /* RegisterViewController.swift */,
 				E36CED6E23C55E7100D9792A /* RegisterController.swift */,
 				E36CED6523C4F92700D9792A /* DinerTableViewCell.swift */,
@@ -180,7 +177,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E36CED7523C6792500D9792A /* LoginViewController.swift in Sources */,
 				E36CED6B23C5577B00D9792A /* User.swift in Sources */,
 				E36CED6D23C5598400D9792A /* Bearer.swift in Sources */,
 				E36CED4F23C3A53F00D9792A /* AppDelegate.swift in Sources */,

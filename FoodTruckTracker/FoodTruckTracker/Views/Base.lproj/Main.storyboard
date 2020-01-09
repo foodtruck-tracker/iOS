@@ -83,7 +83,7 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d12-Ag-UFc">
                                         <rect key="frame" x="20" y="75" width="334" height="42"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Role" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7sh-sB-Dnk">
                                         <rect key="frame" x="20" y="150" width="334" height="42"/>
@@ -98,7 +98,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jK2-Po-Waj">
                                         <rect key="frame" x="35" y="300" width="304" height="30"/>
                                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Register">
+                                        <state key="normal" title="Signup">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -147,6 +147,7 @@
                     <connections>
                         <outlet property="cityTextField" destination="wWA-GW-f6B" id="8qW-lo-yq2"/>
                         <outlet property="emailTextField" destination="Rvo-XN-J0h" id="9e1-nY-Qdr"/>
+                        <outlet property="logintypeSegmentedControl" destination="D6k-V2-GzW" id="mIU-nR-Db6"/>
                         <outlet property="passwordTextField" destination="d12-Ag-UFc" id="3J4-Fq-Y6z"/>
                         <outlet property="roleTextField" destination="7sh-sB-Dnk" id="6jO-Ox-ZkJ"/>
                         <outlet property="signUpButton" destination="jK2-Po-Waj" id="zqR-ls-DkL"/>
@@ -694,7 +695,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="mappin" catalog="system" width="52" height="64"/>
+        <image name="mappin" catalog="system" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="X5K-PG-eUp"/>
