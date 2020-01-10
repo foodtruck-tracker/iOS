@@ -18,6 +18,7 @@
 		E36CED6D23C5598400D9792A /* Bearer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36CED6C23C5598400D9792A /* Bearer.swift */; };
 		E36CED6F23C55E7100D9792A /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36CED6E23C55E7100D9792A /* RegisterController.swift */; };
 		E36CED7123C64E5C00D9792A /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E36CED7023C64E5C00D9792A /* RegisterViewController.swift */; };
+		E382133223C7BCAB00F3CE17 /* TruckRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E382133123C7BCAB00F3CE17 /* TruckRegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		E36CED6C23C5598400D9792A /* Bearer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bearer.swift; sourceTree = "<group>"; };
 		E36CED6E23C55E7100D9792A /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = SOURCE_ROOT; };
 		E36CED7023C64E5C00D9792A /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		E382133123C7BCAB00F3CE17 /* TruckRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckRegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				E36CED7023C64E5C00D9792A /* RegisterViewController.swift */,
+				E382133123C7BCAB00F3CE17 /* TruckRegisterViewController.swift */,
 				E36CED6E23C55E7100D9792A /* RegisterController.swift */,
 				E36CED6523C4F92700D9792A /* DinerTableViewCell.swift */,
 			);
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E36CED6B23C5577B00D9792A /* User.swift in Sources */,
+				E382133223C7BCAB00F3CE17 /* TruckRegisterViewController.swift in Sources */,
 				E36CED6D23C5598400D9792A /* Bearer.swift in Sources */,
 				E36CED4F23C3A53F00D9792A /* AppDelegate.swift in Sources */,
 				E36CED7123C64E5C00D9792A /* RegisterViewController.swift in Sources */,

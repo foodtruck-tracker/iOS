@@ -33,9 +33,9 @@ class RegisterController {
     
     func signUp(with user: User, completion: @escaping (Error?) -> Void) {
         guard let url = baseURL else { return }
-        let signUpURL = url.appendingPathComponent("/api/auth/register")
+        let signUpURL = url.appendingPathComponent("api/auth/register")
         var request = URLRequest(url: signUpURL)
-        request.httpMethod = HTTPMethod.get.rawValue
+        request.httpMethod = HTTPMethod.post.rawValue
         request.setValue("application/json", forHTTPHeaderField: "Content-Type")
         
         let encoder = JSONEncoder()
